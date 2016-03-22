@@ -1,0 +1,13 @@
+﻿@model TraningMVC.Models.Student
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(model => model.FullName)
+
+    <input type="submit" value="Update" />
+}

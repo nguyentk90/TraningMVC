@@ -1,0 +1,17 @@
+﻿@model List<TraningMVC.Models.Student>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@foreach (var st in Model) {
+    <div>
+        <h1>Name: @st.FullName hello</h1>
+        <h2>Class: @st.ClassName</h2>
+        @Html.DisplayFor(x => x.First().FullName) ciao
+    </div>
+}
+
+@System.DateTime.Now
